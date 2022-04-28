@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+ <script type="text/javascript">
+ function check_email()
+ {
+   var email=document.getElementByid("el").value
+   atpost=email_add.indexOf("@")
+   dotpos=email_add.lastindexOf(".")
+   if(atpos<a||dotpos<atpos+2)
+   {
+   alert("Not Valid Email,pleasetry again.");
+     retuen false
+   }
+   else
+   {
+     retuen true
+	}
+	}
+	</script>
+ </HEAD>
+
+ <BODY>
+  Enter Email<input type="text" id="email">
+  <input type="button" value="check email" onclick="return check_email()">
+
+  </BODY>
+</HTML>
